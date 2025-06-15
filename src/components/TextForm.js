@@ -31,7 +31,7 @@ export default function TextForm(props) {
   }
   const handleExtraspaces = () =>{
     // console.log("Lowercase was clicked" + text);
-    let newText = text.split(/[]+/);
+    let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
     props.showAlert("extra spaces removed", "success");
   }
